@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Taxi Requests</title>
+</head>
+<body>
+    <div class="user-form" id="user-page">
+        <form id="userForm">
+            <label for="name">Имя</label>
+            <input type="text" id="name" placeholder="name" required>
+
+            <label for="email">Почта</label>
+            <input type="text" id="email" placeholder="email" required>
+
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+    <div class="user-form hidden" id="button-page">
+        <button id="button-order">Заказ</button>
+        <div class="hidden" id="button-label">Поиск..</div>
+    </div>
+    <div class="chat-container hidden" id="chat-page">
+        <div class="chat-area">
+            <div class="chat-area" id="chat-messages">
+            </div>
+            <div class="taxi-form hidden" id="taxi-page">
+                <div id="button-label">В пути....</div>
+                <button id="button-end-order">Закончить поездку</button>
+            </div>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
